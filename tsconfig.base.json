@@ -1,0 +1,46 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@my-org/lib-core/*": [
+        "libs/lib-core/*",
+        "libs/lib-core"
+      ],
+      "@my-org/lib-core": [
+        "dist/lib-core/*",
+        "dist/lib-core"
+      ],
+      "@my-org/lib-extend/*": [
+        "libs/lib-extend/*",
+        "libs/lib-extend"
+      ],
+      "@my-org/lib-extend": [
+        "dist/lib-extend/*",
+        "dist/lib-extend"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
