@@ -1,20 +1,36 @@
 {
   "implicitDependencies": {
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     ".eslintrc.json": "*"
   },
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "npmScope": "my-org-poc",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
     }
   },
   "projects": {
-    "dev-app": { "tags": [] },
-    "dev-app-e2e": { "tags": [], "implicitDependencies": ["dev-app"] },
-    "lib-core": { "tags": [] },
-    "lib-extend": { "tags": [] }
+    "dev-app": {
+      "tags": []
+    },
+    "dev-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["dev-app"]
+    },
+    "lib-core": {
+      "tags": []
+    },
+    "lib-extend": {
+      "tags": []
+    }
   }
 }

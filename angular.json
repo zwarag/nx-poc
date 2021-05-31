@@ -47,13 +47,20 @@
             "main": "apps/dev-app/src/main.ts",
             "polyfills": "apps/dev-app/src/polyfills.ts",
             "tsConfig": "apps/dev-app/tsconfig.app.json",
-            "aot": true,
             "assets": [
               "apps/dev-app/src/favicon.ico",
               "apps/dev-app/src/assets"
             ],
-            "styles": ["apps/dev-app/src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "apps/dev-app/src/styles.scss"
+            ],
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -113,7 +120,9 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/apps/dev-app"],
+          "outputs": [
+            "coverage/apps/dev-app"
+          ],
           "options": {
             "jestConfig": "apps/dev-app/jest.config.js",
             "passWithNoTests": true
@@ -142,7 +151,9 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": ["apps/dev-app-e2e/**/*.{js,ts}"]
+            "lintFilePatterns": [
+              "apps/dev-app-e2e/**/*.{js,ts}"
+            ]
           }
         }
       }
