@@ -166,6 +166,7 @@
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
+          "outputs": ["dist/@my-org/lib-core"],
           "options": {
             "tsConfig": "libs/lib-core/tsconfig.lib.json",
             "project": "libs/lib-core/ng-package.json"
