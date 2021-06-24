@@ -10,27 +10,17 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-org/lib-core/*": [
-        "libs/lib-core/*"
-      ],
-      "@my-org/lib-extend/*": [
-        "libs/lib-extend/*"
-      ]
+      "@my-org/lib-core/*": ["libs/lib-core/*"],
+      "@my-org/lib-extend/*": ["libs/lib-extend/*"]
     }
   },
   "angularCompilerOptions": {
     "strictTemplates": true
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

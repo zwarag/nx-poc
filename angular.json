@@ -51,9 +51,7 @@
               "apps/dev-app/src/favicon.ico",
               "apps/dev-app/src/assets"
             ],
-            "styles": [
-              "apps/dev-app/src/styles.scss"
-            ],
+            "styles": ["apps/dev-app/src/styles.scss"],
             "scripts": [],
             "vendorChunk": true,
             "extractLicenses": false,
@@ -120,9 +118,7 @@
         },
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": [
-            "coverage/apps/dev-app"
-          ],
+          "outputs": ["coverage/apps/dev-app"],
           "options": {
             "jestConfig": "apps/dev-app/jest.config.js",
             "passWithNoTests": true
@@ -151,9 +147,7 @@
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
-            "lintFilePatterns": [
-              "apps/dev-app-e2e/**/*.{js,ts}"
-            ]
+            "lintFilePatterns": ["apps/dev-app-e2e/**/*.{js,ts}"]
           }
         }
       }
