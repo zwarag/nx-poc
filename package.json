@@ -55,6 +55,7 @@
     "@nrwl/eslint-plugin-nx": "12.5.0",
     "@nrwl/jest": "12.5.0",
     "@nrwl/linter": "12.5.0",
+    "@nrwl/nx-plugin": "^12.5.0",
     "@nrwl/tao": "12.5.0",
     "@nrwl/workspace": "12.5.0",
     "@types/jasmine": "~3.5.0",
