@@ -31,6 +31,13 @@
     },
     "lib-extend": {
       "tags": []
+    },
+    "nx-poc-schematics": {
+      "tags": []
+    },
+    "nx-poc-schematics-e2e": {
+      "tags": [],
+      "implicitDependencies": ["nx-poc-schematics"]
     }
   },
   "targetDependencies": {

@@ -226,6 +226,76 @@
           }
         }
       }
+    },
+    "nx-poc-schematics": {
+      "root": "libs/nx-poc-schematics",
+      "sourceRoot": "libs/nx-poc-schematics/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/nx-poc-schematics/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/nx-poc-schematics"],
+          "options": {
+            "jestConfig": "libs/nx-poc-schematics/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/nx-poc-schematics",
+            "tsConfig": "libs/nx-poc-schematics/tsconfig.lib.json",
+            "packageJson": "libs/nx-poc-schematics/package.json",
+            "main": "libs/nx-poc-schematics/src/index.ts",
+            "assets": [
+              "libs/nx-poc-schematics/*.md",
+              {
+                "input": "./libs/nx-poc-schematics/src",
+                "glob": "**/!(*.ts)",
+                "output": "./src"
+              },
+              {
+                "input": "./libs/nx-poc-schematics/src",
+                "glob": "**/*.d.ts",
+                "output": "./src"
+              },
+              {
+                "input": "./libs/nx-poc-schematics",
+                "glob": "generators.json",
+                "output": "."
+              },
+              {
+                "input": "./libs/nx-poc-schematics",
+                "glob": "executors.json",
+                "output": "."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "nx-poc-schematics-e2e": {
+      "root": "apps/nx-poc-schematics-e2e",
+      "projectType": "application",
+      "sourceRoot": "apps/nx-poc-schematics-e2e/src",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/nx-plugin:e2e",
+          "options": {
+            "target": "nx-poc-schematics:build",
+            "npmPackageName": "@nx-poc/nx-poc-schematics",
+            "pluginOutputPath": "dist/libs/nx-poc-schematics",
+            "jestConfig": "apps/nx-poc-schematics-e2e/jest.config.js"
+          }
+        }
+      }
     }
   }
 }
