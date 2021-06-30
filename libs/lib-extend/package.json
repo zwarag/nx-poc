@@ -1,10 +1,10 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "name": "@my-org/lib-extend",
+  "name": "@nx-poc/lib-extend",
   "ngPackage": {
     "lib": {
       "entryFile": "public_api.ts"
     },
-    "dest": "../../dist/@my-org/lib-extend"
+    "dest": "../../dist/@nx-poc/lib-extend"
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'my-org-poc-root',
+  selector: 'nx-poc-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

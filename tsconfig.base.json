@@ -18,10 +18,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-org/lib-core/*": [
+      "@nx-poc/lib-core/*": [
         "libs/lib-core/*"
       ],
-      "@my-org/lib-extend/*": [
+      "@nx-poc/lib-extend/*": [
         "libs/lib-extend/*"
       ]
     }

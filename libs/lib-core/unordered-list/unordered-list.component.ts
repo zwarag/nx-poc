@@ -1,27 +1,21 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'my-org-poc-unordered-list',
+  selector: 'nx-poc-unordered-list',
   template: `
     <ul>
-      <li *ngFor='let element of data'>
-        {{element}}
+      <li *ngFor="let element of data">
+        {{ element }}
       </li>
     </ul>
   `,
-  styles: []
+  styles: [],
 })
 export class UnorderedListComponent {
-
   @Input()
   data: Array<string>;
 
   constructor() {
-    this.data = [
-      'first',
-      'second',
-      'third'
-    ]
+    this.data = ['first', 'second', 'third'];
   }
-
 }

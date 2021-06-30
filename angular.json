@@ -37,7 +37,7 @@
       "projectType": "application",
       "root": "apps/dev-app",
       "sourceRoot": "apps/dev-app/src",
-      "prefix": "my-org-poc",
+      "prefix": "nx-poc",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -156,11 +156,11 @@
       "projectType": "library",
       "root": "libs/lib-core",
       "sourceRoot": "libs/lib-core/src",
-      "prefix": "my-org-poc",
+      "prefix": "nx-poc",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
-          "outputs": ["dist/@my-org/lib-core"],
+          "outputs": ["dist/@nx-poc/lib-core"],
           "options": {
             "tsConfig": "libs/lib-core/tsconfig.lib.json",
             "project": "libs/lib-core/ng-package.json"
@@ -194,7 +194,7 @@
       "projectType": "library",
       "root": "libs/lib-extend",
       "sourceRoot": "libs/lib-extend/src",
-      "prefix": "my-org-experimental",
+      "prefix": "nx-poc-experimental",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:package",
