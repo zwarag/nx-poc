@@ -1,0 +1,20 @@
+{
+  "cli": "nx",
+  "id": "component-secondary",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The component & module name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "project": {
+      "type": "string",
+      "description": "The project where the package shall be generated"
+    }
+  },
+  "required": ["name", "project"]
+}
